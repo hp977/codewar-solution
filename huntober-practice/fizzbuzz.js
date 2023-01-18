@@ -6,26 +6,30 @@
 //n = 9 -> 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz
 //n = 15 ->  1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz
 
-function fizzBuzz(num){
-    //for loop from 1 to num 
-    for(let i = 1; i <= num; i++){
-      //conditional 
-      //if num % 3 && num % 5 === 0 -> fizzBuzz
-      if(i % 3 === 0 && i % 5 === 0){
-        console.log('fizzBuzz')
-      }else if(i % 3 === 0){
-        console.log('fizz')
-      }else if( i % 5 === 0 ){
-        console.log('buzz')
-      }else{
-        console.log(i)
+
+const fizzBuzz = (num) => {
+  // for loop from i to num
+    for (let i = 1; i <= num; i++) {
+      // conditional
+
+      // if i % 3 = 0 % i % 5 = 0 => fizzbuzz
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("fizzbuzz")
       }
-      //if num % 3 === 0 -> fizz
-      //if num % 5 === 0 -> buzz
-      //log the num
+      // if i % 3 = 0 =>  fizz
+          else if (i % 3 === 0) {
+      console.log('fizz')
     }
-  }
-  
+      // if i % 5 = 0 => buzz
+    else if (i % 5 === 0) {
+      console.log('buzz')
+    }
+    // log the num
+    else {
+      console.log(i)
+    }  
+    } 
+}
   fizzBuzz(5) //1, 2, fizz, 4, buzz
   fizzBuzz(9) //1, 2, fizz, 4, buzz, fizz, 7, 8, fizz
   fizzBuzz(15) //1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz
