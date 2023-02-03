@@ -13,6 +13,34 @@ function domainName(url) {
 }
 
 
+// Other solution
+
+function extractDomain(url) {
+  var domain;
+  //find & remove protocol (http, ftp, etc.) and get domain
+  if (url.indexOf("://") > -1) {
+      domain = url.split('/')[2];
+  }
+  else {
+      domain = url.split('/')[0];
+  }
+
+  //find & remove port number
+  domain = domain.split(':')[0];
+
+  domain = domain.split('.')[1]
+
+  return domain;
+}
+
+// test the function with an example URL
+var url = "https://www.example.com/some/path";
+var domain = extractDomain(url);
+
+console.log("The domain of the URL is: " + domain);
+
+
+
 // test to confirm that our program works
 domainName('https://twitter.com')  
 domainName("http://github.com/carbonfive/raygun") == "github" 
