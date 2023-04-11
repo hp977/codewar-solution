@@ -23,9 +23,16 @@ function arrayDiff(a, b) {
     return result;
 }
 
+// Test for my solution 
+console.log(arrayDiff([1,2],[1]))    //  [2]
+console.log(arrayDiff([1,2,2,2,3],[2]))  //  [1,3]
+
 
 // Other answer
 function array_diff(a, b) {
   return a.filter(e => !b.includes(e));
 }
 
+// Test for other solution 
+  console.log(array_diff([1,2],[1]))    //  [2]
+ console.log(array_diff([1,2,2,2,3],[2]))  //  [1,3]
