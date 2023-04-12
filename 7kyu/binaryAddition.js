@@ -14,6 +14,8 @@ function decimalToBinary(decimal){
   return (decimal >>> 0).toString(2);
 }
 
+// Yet another answer 
 function addBinary(a,b) {
   return decimalToBinary(a+b);
 }
+

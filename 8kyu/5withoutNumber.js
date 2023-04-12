@@ -10,3 +10,7 @@ function unusualFive() {
 let five = 'Five!';
 return five.length;
 }
+
+
+// Examples 
+console.log(unusualFive());

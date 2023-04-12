@@ -15,8 +15,15 @@ function generateShape(integer){
     return (symbol.repeat(integer) + '\n').repeat(integer-1) + symbol.repeat(integer)
   }
 
-  
 // Other answer
 function generateShape(n){
   return ("+".repeat(n)+"\n").repeat(n).trim()
 }
+
+// Example test
+console.log('When n equals 2')
+console.log(generateShape(2));
+console.log('When n equals 3')
+console.log(generateShape(3));
+console.log('When n equals 4')
+console.log(generateShape(4));

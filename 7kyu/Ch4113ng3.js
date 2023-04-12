@@ -8,4 +8,9 @@ function nerdify(txt){
   }
 
 // Other answer
-const nerdify = t => t.replace(/[aelAE]/g, a => ({'a': 4, 'e': 3, 'l':1 }[a.toLowerCase()]));
+const n3rdify = t => t.replace(/[aelAE]/g, a => ({'a': 4, 'e': 3, 'l':1 }[a.toLowerCase()]));
+
+
+// Some tests
+console.log(nerdify('hello world')) // => h311o wor1d
+console.log(n3rdify('hello universe')) // h311o univ3rs3

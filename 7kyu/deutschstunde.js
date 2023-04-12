@@ -27,3 +27,4 @@ function derDieDas(wort) {
   if (n > 3) return "der " + wort
   return "die " + wort
 }
+

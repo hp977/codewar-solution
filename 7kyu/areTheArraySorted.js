@@ -20,3 +20,7 @@ function inAscOrder(arr) {
   }
   return true;
 }
+
+// Test
+console.log(inAscOrder([1, 2, 4, 3, 5]))  // false
+console.log(inAscOrder([-8, 3, 4, 5, 8]))   // true
