@@ -20,3 +20,8 @@ String.prototype.sortLetters = function() {
 let ifIsAnagram = function(test, original) {
   return test.sortLetters() == original.sortLetters();
 };
+
+
+// Example
+console.log(isAnagram('appie', 'pieap'))  // true
+console.log(isAnagram('appie', 'piep')) // false

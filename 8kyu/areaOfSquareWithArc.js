@@ -6,7 +6,6 @@
 // Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
 
 
-
 // My answer
 function squareArea(A) {
     let a = A / (2 * Math.PI * (90 / 360));
@@ -16,3 +15,7 @@ function squareArea(A) {
 
 // Other answer
 squareArea = A => +Math.pow((2 * A / 3.1416), 2).toFixed(2);
+
+
+// Example 
+console.log(squareArea(5)) 

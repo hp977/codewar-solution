@@ -22,7 +22,7 @@ function addLength(str) {
     return result;
   }
   
-  // Sample Test
+  // Examples
   const result1 = addLength("apple ban");
 console.log(result1);  // prints ["apple 5", "ban 3"]
 

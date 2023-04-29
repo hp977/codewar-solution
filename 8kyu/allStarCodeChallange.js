@@ -12,4 +12,8 @@ function strCount(str, letter){
     return str.split(letter).length-1
   }
 
+  // Examples
+  console.log(strCount('apple', 'x')) // --> 0
+  console.log(strCount('pineapple', 'p')) // --> 3
+
 
