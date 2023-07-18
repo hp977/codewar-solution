@@ -10,15 +10,15 @@
 
 
 
-// My answer
-function absentVowel(x){
-    let vowels = 'aeiou'
+  // My answer 
+  function absentVowel(string) {
+    const vowels = 'aeiou'
     for (let i = 0; i < vowels.length; i++) {
-      if (x.indexOf(vowels[i]) === -1) {
+      if (string.indexOf(vowels[i]) === -1) {
         return i
       }
     }
-  }
+    }
 
 
 // Other answer
@@ -30,3 +30,8 @@ function absentVowel(x) {
       }
     }
   }
+
+
+console.log(absentVowel('abrakadabra'));
+console.log(absentVowel('just do it')); 
+console.log(absentVowel('aeiox'));

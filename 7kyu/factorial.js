@@ -11,6 +11,7 @@ function factorial(n)
 return n>1?n*factorial(n-1):1;
 }
 
+
 // Other answer
 function factorial(n){
 
@@ -19,3 +20,11 @@ function factorial(n){
      }
    return n<2 ? 1 : n*factorial(n-1);
    }
+
+
+// Examples 
+console.log(factorial(1))  // 1 
+// console.log(factorial(14))  // throws new range error which affect execution of other examples
+console.log(factorial(5))  // 120
+console.log(factorial(3))  // 6
+console.log(factorial(11))  // 39916800

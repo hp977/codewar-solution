@@ -13,6 +13,7 @@ function sc(apple){
       }
     }
   }
+  
 // Other answer
 function sc(apple){
     var row = apple.findIndex(x => x.includes("B"));
