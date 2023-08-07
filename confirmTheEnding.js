@@ -10,7 +10,17 @@ function confirmEnding(str, target) {
     return str.slice(str.length-target.length) === target; 
     
     // return str.endsWith(target); 
+
 }
 
 console.log(confirmEnding("Bastian", "n"));   // true 
 console.log(confirmEnding("Hello", "ol"));    // fasle
+
+
+// Using test method
+
+function confirmEnd(str, target) {
+    return str.match(target); 
+}
+
+console.log(confirmEnd('Bastian', 'n')); 

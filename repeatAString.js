@@ -16,3 +16,21 @@ function repeatStringNumTimes(str, num) {
 
 console.log(repeatStringNumTimes('abc', 3));   // abcabcabc
 console.log(repeatStringNumTimes("*", 8));    // ********
+
+
+//  Using do- while loop
+
+function repeatStr(str, num) {
+    // 
+    str = str.toString(); 
+    let repeatedStr = ''; 
+let i = 0; 
+do {
+    repeatedStr += str; 
+    i++; 
+}
+while (i < num)
+    return repeatedStr; 
+}
+
+console.log(repeatStr('ab', 2)); 
